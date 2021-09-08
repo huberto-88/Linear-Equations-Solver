@@ -6,12 +6,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
 
+// main from master branch
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         String inputPath = args[1];
         String outputPath = args[3];
 //        String inputPath = "in.txt";
 //        String outputPath = "out.txt";
+
         Matrix matrix = MatrixLoaderSaver.readMatrix(new File(inputPath));
 
         MatrixEchelonFormReducer.reduceToEchelonForm(matrix);
