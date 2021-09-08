@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.280s</div>
+<div class="counter">3.699s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,86 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="start"></a>
-<h3 class="failures">start</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Exception in test #3
-
-java.io.FileNotFoundException: in.txt (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.util.Scanner.&lt;init&gt;(Scanner.java:639)
-	at solver.MatrixLoaderSaver.readMatrix(MatrixLoaderSaver.java:16)
-	at solver.Main.main(Main.java:15)
-
-Arguments: -in input.txt -out out.txt
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:155)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -151,13 +78,13 @@ Arguments: -in input.txt -out out.txt
 </tr>
 </thead>
 <tr>
-<td class="failures">start</td>
-<td class="failures">0.280s</td>
-<td class="failures">failed</td>
+<td class="success">start</td>
+<td class="success">3.699s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>?[1;31m
@@ -186,6 +113,894 @@ Saved to file out.txt
 [0.0, 1.0, 1.0]
 ?[1;31m
 Start test 3?[0m
+Reduce diagonal R0 to 1 by division by 1.0
+Reduce diagonal R1 to 1 by division by 1.0
+The solution is: [1.0, 1.0]
+Saved to file out.txt
+[1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0]
+?[1;31m
+Start test 4?[0m
+Reduce diagonal R0 to 1 by division by 1.0
+Reduce diagonal R1 to 1 by division by 1.0
+The solution is: [1.0, 1.0]
+Saved to file output.txt
+[1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0]
+?[1;31m
+Start test 5?[0m
+Reduce diagonal R0 to 1 by division by 1.0
+Reduce diagonal R1 to 1 by division by 1.0
+The solution is: [2.0, 2.0]
+Saved to file out.txt
+[1.0, 0.0, 2.0]
+[0.0, 1.0, 2.0]
+?[1;31m
+Start test 6?[0m
+Reduce diagonal R0 to 1 by division by 2.0
+Reduce diagonal R1 to 1 by division by 2.0
+The solution is: [1.0, 1.0]
+Saved to file out.txt
+[1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0]
+?[1;31m
+Start test 7?[0m
+Reduce diagonal R0 to 1 by division by 1.0
+R2 add to R1 multipled by -3.0
+Reduce diagonal R1 to 1 by division by -2.0
+R1 add to R2 multipled by -2.0
+The solution is: [-1.0, 1.0]
+Saved to file out.txt
+[1.0, 0.0, -1.0]
+[-0.0, 1.0, 1.0]
+?[1;31m
+Start test 8?[0m
+Reduce diagonal R0 to 1 by division by 26.0
+R2 add to R1 multipled by -37.0
+R3 add to R1 multipled by -99.0
+R4 add to R1 multipled by -37.0
+R5 add to R1 multipled by -36.0
+R6 add to R1 multipled by -31.0
+R7 add to R1 multipled by -18.0
+R8 add to R1 multipled by -32.0
+R9 add to R1 multipled by -56.0
+R10 add to R1 multipled by -63.0
+R11 add to R1 multipled by -71.0
+R12 add to R1 multipled by -13.0
+R13 add to R1 multipled by -34.0
+R14 add to R1 multipled by -25.0
+R15 add to R1 multipled by -80.0
+R16 add to R1 multipled by -31.0
+R17 add to R1 multipled by -57.0
+R18 add to R1 multipled by -4.0
+R19 add to R1 multipled by -69.0
+R20 add to R1 multipled by -98.0
+Reduce diagonal R1 to 1 by division by -94.0769230769231
+R1 add to R2 multipled by -3.4615384615384617
+R3 add to R2 multipled by 273.6923076923077
+R4 add to R2 multipled by 88.0769230769231
+R5 add to R2 multipled by 51.61538461538461
+R6 add to R2 multipled by 78.3076923076923
+R7 add to R2 multipled by 44.30769230769231
+R8 add to R2 multipled by 48.769230769230774
+R9 add to R2 multipled by 140.84615384615387
+R10 add to R2 multipled by 209.0769230769231
+R11 add to R2 multipled by 240.76923076923077
+R12 add to R2 multipled by -5.0
+R13 add to R2 multipled by 108.6923076923077
+R14 add to R2 multipled by 70.53846153846155
+R15 add to R2 multipled by 238.9230769230769
+R16 add to R2 multipled by 9.307692307692307
+R17 add to R2 multipled by 195.30769230769232
+R18 add to R2 multipled by -50.15384615384615
+R19 add to R2 multipled by 179.84615384615387
+R20 add to R2 multipled by 337.2307692307692
+Reduce diagonal R2 to 1 by division by 10.46565821749796
+R1 add to R3 multipled by -0.49959116925592806
+R2 add to R3 multipled by -0.04456255110384301
+R4 add to R3 multipled by 6.267375306623059
+R5 add to R3 multipled by -49.76165167620605
+R6 add to R3 multipled by -59.22035977105478
+R7 add to R3 multipled by -15.20523303352412
+R8 add to R3 multipled by -8.250204415372036
+R9 add to R3 multipled by 17.338920686835646
+R10 add to R3 multipled by -8.124693376941945
+R11 add to R3 multipled by -29.30621422730989
+R12 add to R3 multipled by -22.277187244480785
+R13 add to R3 multipled by -33.61283728536386
+R14 add to R3 multipled by -65.79721995094032
+R15 add to R3 multipled by -5.339329517579722
+R16 add to R3 multipled by -68.14554374488961
+R17 add to R3 multipled by -3.4341782502044182
+R18 add to R3 multipled by 0.8503679476696648
+R19 add to R3 multipled by -24.89901880621423
+R20 add to R3 multipled by 2.0490596892886384
+Reduce diagonal R3 to 1 by division by -95.56685808039376
+R1 add to R4 multipled by -4.595218563225126
+R2 add to R4 multipled by -0.7691316067033869
+R3 add to R4 multipled by 7.15867807336224
+R5 add to R4 multipled by -325.69166764326724
+R6 add to R4 multipled by -468.30294152115306
+R7 add to R4 multipled by -152.40864877534275
+R8 add to R4 multipled by -78.55115434196647
+R9 add to R4 multipled by 114.03339974217738
+R10 add to R4 multipled by -29.92616899097618
+R11 add to R4 multipled by -199.2078987460447
+R12 add to R4 multipled by -209.72459861713347
+R13 add to R4 multipled by -212.93296613148948
+R14 add to R4 multipled by -474.3489980077346
+R15 add to R4 multipled by -35.61338333528653
+R16 add to R4 multipled by -464.1369975389663
+R17 add to R4 multipled by -43.611977030352776
+R18 add to R4 multipled by -4.029415211531703
+R19 add to R4 multipled by -144.38919489042541
+R20 add to R4 multipled by 53.41181296144383
+Reduce diagonal R4 to 1 by division by -18.537871318696318
+R1 add to R5 multipled by -0.31997297270783154
+R2 add to R5 multipled by -1.1938227186218533
+R3 add to R5 multipled by 0.7090752349559541
+R4 add to R5 multipled by 0.5329710891361075
+R6 add to R5 multipled by -82.78412379578953
+R7 add to R5 multipled by -106.78653466949203
+R8 add to R5 multipled by -34.526574793493836
+R9 add to R5 multipled by -6.527256607216401
+R10 add to R5 multipled by -53.779151215492384
+R11 add to R5 multipled by -57.51284532148256
+R12 add to R5 multipled by -76.96606137304535
+R13 add to R5 multipled by -112.40203342358788
+R14 add to R5 multipled by -54.103414954774735
+R15 add to R5 multipled by -54.52865947573919
+R16 add to R5 multipled by -12.199328732317156
+R17 add to R5 multipled by -113.63604758961682
+R18 add to R5 multipled by -2.0695118900465053
+R19 add to R5 multipled by -27.026167667314226
+R20 add to R5 multipled by -101.62574680675726
+Reduce diagonal R5 to 1 by division by 1210.5537700149848
+R1 add to R6 multipled by -7.134899218534779
+R2 add to R6 multipled by -13.763492372718003
+R3 add to R6 multipled by 13.12714152138162
+R4 add to R6 multipled by 5.402551280452678
+R5 add to R6 multipled by 12.207196346657467
+R7 add to R6 multipled by -1368.5545904096175
+R8 add to R6 multipled by -410.79381317136426
+R9 add to R6 multipled by 89.51855529312303
+R10 add to R6 multipled by -685.06950208423
+R11 add to R6 multipled by -716.8753525391617
+R12 add to R6 multipled by -1017.7578221109034
+R13 add to R6 multipled by -1539.5163407832845
+R14 add to R6 multipled by -934.1908459385307
+R15 add to R6 multipled by -614.3109769952825
+R16 add to R6 multipled by -532.2696131503951
+R17 add to R6 multipled by -1268.755032623625
+R18 add to R6 multipled by -133.6037651364035
+R19 add to R6 multipled by -391.59165548453086
+R20 add to R6 multipled by -1078.4832706505224
+Reduce diagonal R6 to 1 by division by 18.970155639295626
+R1 add to R7 multipled by 0.10956693736805523
+R2 add to R7 multipled by -1.0553564478558108
+R3 add to R7 multipled by 0.8790380603327321
+R4 add to R7 multipled by -0.5843957608742882
+R5 add to R7 multipled by 0.9130146703335091
+R6 add to R7 multipled by -0.6378654104782445
+R8 add to R7 multipled by 4.280408908014181
+R9 add to R7 multipled by -0.8232578957629428
+R10 add to R7 multipled by -38.73782752045366
+R11 add to R7 multipled by -23.9593953519622
+R12 add to R7 multipled by -52.33560838524943
+R13 add to R7 multipled by -107.18227305202129
+R14 add to R7 multipled by -72.87708617193005
+R15 add to R7 multipled by -30.381897691870563
+R16 add to R7 multipled by 5.698716153820953
+R17 add to R7 multipled by -141.1269201667185
+R18 add to R7 multipled by 25.56329382889983
+R19 add to R7 multipled by -55.82603431059056
+R20 add to R7 multipled by -97.69059136554165
+Reduce diagonal R7 to 1 by division by -4.593690069135381
+R1 add to R8 multipled by 0.09138834126229768
+R2 add to R8 multipled by -0.7212112840758417
+R3 add to R8 multipled by 0.7746034155014886
+R4 add to R8 multipled by -0.9386587533940179
+R5 add to R8 multipled by 0.5026273526385185
+R6 add to R8 multipled by -0.9793926489494311
+R7 add to R8 multipled by 0.814844516150092
+R9 add to R8 multipled by -6.519753500851204
+R10 add to R8 multipled by -58.967417752295376
+R11 add to R8 multipled by -64.91908938181687
+R12 add to R8 multipled by -4.481293542168331
+R13 add to R8 multipled by -130.52145625270396
+R14 add to R8 multipled by -135.29712295767877
+R15 add to R8 multipled by -24.55339331542404
+R16 add to R8 multipled by -26.022066020971174
+R17 add to R8 multipled by -117.07703459142263
+R18 add to R8 multipled by 83.13084900969804
+R19 add to R8 multipled by -22.83585175413411
+R20 add to R8 multipled by -46.446767339510885
+Reduce diagonal R8 to 1 by division by 93.4472378895893
+R1 add to R9 multipled by 1.2928615807328416
+R2 add to R9 multipled by -12.903722259249882
+R3 add to R9 multipled by 13.07385246132962
+R4 add to R9 multipled by -16.469294603961917
+R5 add to R9 multipled by 8.943728056578582
+R6 add to R9 multipled by -18.308352045047272
+R7 add to R9 multipled by 13.6438371574974
+R8 add to R9 multipled by 18.681033683276794
+R10 add to R9 multipled by -975.8440339974456
+R11 add to R9 multipled by -1186.4937064700684
+R12 add to R9 multipled by -28.169045976817884
+R13 add to R9 multipled by -2349.6699931841968
+R14 add to R9 multipled by -2375.7692965109304
+R15 add to R9 multipled by -332.5255867517426
+R16 add to R9 multipled by -392.30253072010055
+R17 add to R9 multipled by -2098.848881107715
+R18 add to R9 multipled by 1552.7738768883032
+R19 add to R9 multipled by -359.85421619388217
+R20 add to R9 multipled by -836.5550660143754
+Reduce diagonal R9 to 1 by division by -1367.7073907852432
+R1 add to R10 multipled by -0.7172084138016845
+R2 add to R10 multipled by 15.873211800532046
+R3 add to R10 multipled by -17.072879477167106
+R4 add to R10 multipled by 23.665744575186885
+R5 add to R10 multipled by -11.540067239628787
+R6 add to R10 multipled by 23.43797371616124
+R7 add to R10 multipled by -17.691519418248262
+R8 add to R10 multipled by -27.614654222267617
+R9 add to R10 multipled by -1.5858579547121432
+R11 add to R10 multipled by 1570.6111656521061
+R12 add to R10 multipled by -115.0052755697956
+R13 add to R10 multipled by 3270.914303166077
+R14 add to R10 multipled by 3317.388837242247
+R15 add to R10 multipled by 455.8256801736674
+R16 add to R10 multipled by 716.734346120624
+R17 add to R10 multipled by 2605.5034568446963
+R18 add to R10 multipled by -2071.816639862955
+R19 add to R10 multipled by 326.1111357835831
+R20 add to R10 multipled by 893.730014437185
+Reduce diagonal R10 to 1 by division by 11.172751697437093
+R1 add to R11 multipled by 0.57387588122354
+R2 add to R11 multipled by -2.2074536096278923
+R3 add to R11 multipled by 1.4734065688351086
+R4 add to R11 multipled by -0.8127717599860311
+R5 add to R11 multipled by 1.3550031920779038
+R6 add to R11 multipled by -0.9041183041961798
+R7 add to R11 multipled by 1.7757043756893927
+R8 add to R11 multipled by -1.0813463400731624
+R9 add to R11 multipled by 0.1107040560368674
+R10 add to R11 multipled by -0.4313804161029947
+R12 add to R11 multipled by -57.10255444794645
+R13 add to R11 multipled by -101.66363952298593
+R14 add to R11 multipled by -116.88283927213615
+R15 add to R11 multipled by -104.1452440132666
+R16 add to R11 multipled by 89.03660977110962
+R17 add to R11 multipled by -224.38705884962246
+R18 add to R11 multipled by 55.617316176784925
+R19 add to R11 multipled by -113.78720791361653
+R20 add to R11 multipled by -278.19824475802716
+Reduce diagonal R11 to 1 by division by 296.3365723663185
+R1 add to R12 multipled by 1.9324061245457527
+R2 add to R12 multipled by -7.9583440217629775
+R3 add to R12 multipled by 4.6820500562011835
+R4 add to R12 multipled by -3.0976691773795677
+R5 add to R12 multipled by 6.7663461132488205
+R6 add to R12 multipled by -3.3139956768179273
+R7 add to R12 multipled by 6.90276268883823
+R8 add to R12 multipled by -4.051880382465409
+R9 add to R12 multipled by 0.46039054030982784
+R10 add to R12 multipled by -1.6526741022312366
+R11 add to R12 multipled by 1.7795351465348186
+R13 add to R12 multipled by -463.0750425678317
+R14 add to R12 multipled by -225.6435564854153
+R15 add to R12 multipled by -261.10244183974464
+R16 add to R12 multipled by 271.88820902882446
+R17 add to R12 multipled by -858.0791850973071
+R18 add to R12 multipled by 107.95299334763077
+R19 add to R12 multipled by -432.2372935137868
+R20 add to R12 multipled by -945.0380824565934
+Reduce diagonal R12 to 1 by division by 191.3086860594185
+R1 add to R13 multipled by -2.5927847834709015
+R2 add to R13 multipled by 5.413264957121864
+R3 add to R13 multipled by -4.544096416602686
+R4 add to R13 multipled by 0.013849072280985197
+R5 add to R13 multipled by 1.2758829867032873
+R6 add to R13 multipled by 0.28438976340216193
+R7 add to R13 multipled by -3.4045890622691957
+R8 add to R13 multipled by 4.704919131338277
+R9 add to R13 multipled by 0.29776004077578233
+R10 add to R13 multipled by 0.45227134179535877
+R11 add to R13 multipled by -6.629937854918581
+R12 add to R13 multipled by 2.5272156946024587
+R14 add to R13 multipled by 551.0419615058387
+R15 add to R13 multipled by 656.0166086865727
+R16 add to R13 multipled by -439.74780998040956
+R17 add to R13 multipled by 398.63910445724196
+R18 add to R13 multipled by -150.44568270854722
+R19 add to R13 multipled by 265.30365982262083
+R20 add to R13 multipled by 846.6498957597073
+Reduce diagonal R13 to 1 by division by -1400.9316483186085
+R1 add to R14 multipled by -5.887884446785434
+R2 add to R14 multipled by 14.781440232393049
+R3 add to R14 multipled by -11.171713886389856
+R4 add to R14 multipled by 3.6428468540188406
+R5 add to R14 multipled by -1.676380304229128
+R6 add to R14 multipled by 2.9335602581267994
+R7 add to R14 multipled by -11.393875046141419
+R8 add to R14 multipled by 9.402164101690737
+R9 add to R14 multipled by -0.34653942057084725
+R10 add to R14 multipled by 3.729616634556131
+R11 add to R14 multipled by -14.905258721564525
+R12 add to R14 multipled by 4.115217010897634
+R13 add to R14 multipled by 1.0554244834368123
+R15 add to R14 multipled by 1463.602129451358
+R16 add to R14 multipled by -937.5937170575521
+R17 add to R14 multipled by 1284.6619111926746
+R18 add to R14 multipled by -516.3787200780666
+R19 add to R14 multipled by 689.5444884638051
+R20 add to R14 multipled by 2253.272137895138
+Reduce diagonal R14 to 1 by division by 13.004044387753765
+R1 add to R15 multipled by 0.2084251965300279
+R2 add to R15 multipled by -1.134560684584054
+R3 add to R15 multipled by 0.2500631434526124
+R4 add to R15 multipled by 0.02831348061792527
+R5 add to R15 multipled by 0.007041883804443927
+R6 add to R15 multipled by -1.1432547025900617
+R7 add to R15 multipled by 1.5599922277670588
+R8 add to R15 multipled by -0.5253131452482975
+R9 add to R15 multipled by 0.8991578970333025
+R10 add to R15 multipled by 0.20624727642483665
+R11 add to R15 multipled by -0.24751052527230932
+R12 add to R15 multipled by -0.5509549026613736
+R13 add to R15 multipled by -0.019986328460214975
+R14 add to R15 multipled by -0.8000678867715522
+R16 add to R15 multipled by 192.64890485775913
+R17 add to R15 multipled by -278.41375735958695
+R18 add to R15 multipled by 25.858326766068842
+R19 add to R15 multipled by -105.09171952043891
+R20 add to R15 multipled by -114.4224520818193
+Reduce diagonal R15 to 1 by division by -1302.7257860803365
+R1 add to R16 multipled by 0.08459622661495181
+R2 add to R16 multipled by -7.372649234535477
+R3 add to R16 multipled by 1.8385477419194112
+R4 add to R16 multipled by -0.16113348052253965
+R5 add to R16 multipled by -0.3737554355837165
+R6 add to R16 multipled by -7.290609113304021
+R7 add to R16 multipled by 10.10942646311532
+R8 add to R16 multipled by -3.785826723908325
+R9 add to R16 multipled by 6.4696952930550715
+R10 add to R16 multipled by 1.04838611921963
+R11 add to R16 multipled by -1.064163005000254
+R12 add to R16 multipled by -3.697040631401958
+R13 add to R16 multipled by 0.37437715659607773
+R14 add to R16 multipled by -5.799680810474547
+R15 add to R16 multipled by 6.789083511622797
+R17 add to R16 multipled by -1815.6695533293819
+R18 add to R16 multipled by 145.88696462188594
+R19 add to R16 multipled by -644.1481098929235
+R20 add to R16 multipled by -796.2223423566483
+Reduce diagonal R16 to 1 by division by -60.03164377041048
+R1 add to R17 multipled by -1.303317656622799
+R2 add to R17 multipled by -0.6288720162076569
+R3 add to R17 multipled by -0.548909931420205
+R4 add to R17 multipled by -0.8791624891308201
+R5 add to R17 multipled by 0.24156551444091756
+R6 add to R17 multipled by 1.5038018141913838
+R7 add to R17 multipled by 0.28126627361495693
+R8 add to R17 multipled by -0.5353319695871717
+R9 add to R17 multipled by 0.3745368135182652
+R10 add to R17 multipled by -1.8346249379558013
+R11 add to R17 multipled by 0.33972431874637254
+R12 add to R17 multipled by 0.6940115120521009
+R13 add to R17 multipled by 0.6420685478229802
+R14 add to R17 multipled by -0.5868440688571557
+R15 add to R17 multipled by 0.11460797515836951
+R16 add to R17 multipled by 1.3351434135115374
+R18 add to R17 multipled by -93.95635772238941
+R19 add to R17 multipled by 91.50331989076562
+R20 add to R17 multipled by -66.60165387271468
+Reduce diagonal R17 to 1 by division by -85.13913709287016
+R1 add to R18 multipled by 1.3118270669955532
+R2 add to R18 multipled by -0.305862833480591
+R3 add to R18 multipled by 0.9350315361795914
+R4 add to R18 multipled by 0.18139664595954413
+R5 add to R18 multipled by 0.13749395626928562
+R6 add to R18 multipled by -1.4394535219370368
+R7 add to R18 multipled by -0.7399799823767019
+R8 add to R18 multipled by 0.10012338890388522
+R9 add to R18 multipled by -0.7726842285719542
+R10 add to R18 multipled by 1.5719295762675471
+R11 add to R18 multipled by -0.019366713056883172
+R12 add to R18 multipled by -0.1567397788806354
+R13 add to R18 multipled by -0.8288257838546327
+R14 add to R18 multipled by 1.0194000338665312
+R15 add to R18 multipled by -0.4948721278605863
+R16 add to R18 multipled by -1.0659228396823641
+R17 add to R18 multipled by -0.6566385656049679
+R19 add to R18 multipled by -55.388701897660084
+R20 add to R18 multipled by 9.48349397721801
+Reduce diagonal R18 to 1 by division by -72.80378142821489
+R1 add to R19 multipled by -0.443280727512426
+R2 add to R19 multipled by -1.324401530086246
+R3 add to R19 multipled by 0.0897427354227609
+R4 add to R19 multipled by -1.0702594297914811
+R5 add to R19 multipled by -0.24586632812597808
+R6 add to R19 multipled by -0.8038996072086868
+R7 add to R19 multipled by -0.557707464623484
+R8 add to R19 multipled by 0.2623650795111585
+R9 add to R19 multipled by -0.38365944839028887
+R10 add to R19 multipled by 0.1159127451510149
+R11 add to R19 multipled by -0.50040990342663
+R12 add to R19 multipled by 0.19915679964802474
+R13 add to R19 multipled by -0.4255612703655336
+R14 add to R19 multipled by 0.8064801255248257
+R15 add to R19 multipled by -0.11890345116186507
+R16 add to R19 multipled by -0.31085063658019285
+R17 add to R19 multipled by 0.9789267374510495
+R18 add to R19 multipled by 1.8356777384450151
+R20 add to R19 multipled by 94.30338396765296
+Reduce diagonal R19 to 1 by division by -187.77125560015878
+R1 add to R20 multipled by -0.07469022293570071
+R2 add to R20 multipled by -0.6556695256579352
+R3 add to R20 multipled by 1.0524259631618824
+R4 add to R20 multipled by -0.2772338664536629
+R5 add to R20 multipled by -0.8932720435069066
+R6 add to R20 multipled by -1.9762666668627829
+R7 add to R20 multipled by -0.5294754708813686
+R8 add to R20 multipled by -0.3020844380368965
+R9 add to R20 multipled by -0.7721424070512583
+R10 add to R20 multipled by 1.3373222971178478
+R11 add to R20 multipled by -0.7193061402881232
+R12 add to R20 multipled by -0.5942549661041716
+R13 add to R20 multipled by -0.3689311476732788
+R14 add to R20 multipled by 1.2718457227661442
+R15 add to R20 multipled by -0.022593482205506166
+R16 add to R20 multipled by -1.6666905147982505
+R17 add to R20 multipled by -0.022224524995424266
+R18 add to R20 multipled by 1.9121188503208328
+R19 add to R20 multipled by 1.334430597073273
+The solution is: [0.5428217765267747, -2.392282598561604, 1.5789269345092298, -1.3678947771664736, 0.6433030653635874, -1.7531032672008982, -0.04324128026590812, -0.7503475351543295, -0.8244865584266783, -0.4561665764343612, -1.2162958191593791, 0.3093022604858241, -0.1105035182284988, 1.1717445005694207, -0.5872949333823514, -1.3933118352247724, 1.1229328991804897, 3.069345410455943, 1.1994857698862837, 1.5398839412090333]
+Saved to file out.txt
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5428217765267747]
+[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.392282598561604]
+[0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5789269345092298]
+[0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.3678947771664736]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6433030653635874]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.7531032672008982]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.04324128026590812]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.7503475351543295]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.8244865584266783]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.4561665764343612]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.2162958191593791]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3093022604858241]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.1105035182284988]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1717445005694207]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.5872949333823514]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, -1.3933118352247724]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.1229328991804897]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0, 0.0, 3.069345410455943]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0, 1.1994857698862837]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 1.5398839412090333]
+?[1;31m
+Start test 9?[0m
+Reduce diagonal R0 to 1 by division by 0.11
+R2 add to R1 multipled by -0.8
+R3 add to R1 multipled by -0.99
+R4 add to R1 multipled by -0.19
+R5 add to R1 multipled by -0.59
+R6 add to R1 multipled by -0.66
+R7 add to R1 multipled by -0.06
+R8 add to R1 multipled by -0.87
+R9 add to R1 multipled by -0.87
+R10 add to R1 multipled by -0.34
+R11 add to R1 multipled by -0.38
+R12 add to R1 multipled by -0.36
+R13 add to R1 multipled by -0.94
+R14 add to R1 multipled by -0.03
+R15 add to R1 multipled by -0.43
+R16 add to R1 multipled by -0.01
+R17 add to R1 multipled by -0.83
+R18 add to R1 multipled by -0.54
+R19 add to R1 multipled by -0.3
+R20 add to R1 multipled by -0.25
+Reduce diagonal R1 to 1 by division by -3.8090909090909095
+R1 add to R2 multipled by -5.636363636363637
+R3 add to R2 multipled by 5.57
+R4 add to R2 multipled by 0.720909090909091
+R5 add to R2 multipled by 2.8054545454545456
+R6 add to R2 multipled by 3.4800000000000004
+R7 add to R2 multipled by -0.23181818181818176
+R8 add to R2 multipled by 4.133636363636365
+R9 add to R2 multipled by 4.203636363636364
+R10 add to R2 multipled by 1.4263636363636367
+R11 add to R2 multipled by 1.431818181818182
+R12 add to R2 multipled by 1.6590909090909092
+R13 add to R2 multipled by 4.998181818181818
+R14 add to R2 multipled by -0.11090909090909093
+R15 add to R2 multipled by 1.6436363636363638
+R16 add to R2 multipled by -0.4036363636363637
+R17 add to R2 multipled by 3.958181818181819
+R18 add to R2 multipled by 2.473636363636364
+R19 add to R2 multipled by 1.0509090909090908
+R20 add to R2 multipled by 0.7090909090909092
+Reduce diagonal R2 to 1 by division by 0.6737899761336514
+R1 add to R3 multipled by 0.23102625298329338
+R2 add to R3 multipled by -0.49260143198090695
+R4 add to R3 multipled by -0.8514844868735083
+R5 add to R3 multipled by -0.05015274463007158
+R6 add to R3 multipled by -0.9342529832935561
+R7 add to R3 multipled by 0.2269212410501193
+R8 add to R3 multipled by -0.5316897374701672
+R9 add to R3 multipled by -0.25617183770883045
+R10 add to R3 multipled by -0.1071742243436754
+R11 add to R3 multipled by -0.02804295942720758
+R12 add to R3 multipled by -9.069212410500738E-4
+R13 add to R3 multipled by -0.4193842482100236
+R14 add to R3 multipled by -0.18900238663484487
+R15 add to R3 multipled by -0.40511217183770876
+R16 add to R3 multipled by -0.15571360381861574
+R17 add to R3 multipled by -0.677078758949881
+R18 add to R3 multipled by -0.3739713603818615
+R19 add to R3 multipled by -0.4640429594272074
+R20 add to R3 multipled by 0.21706443914081142
+Reduce diagonal R3 to 1 by division by -2.9167029732429386
+R1 add to R4 multipled by 0.6639959194950376
+R2 add to R4 multipled by -0.12240452255966638
+R3 add to R4 multipled by -3.3469598112766454
+R5 add to R4 multipled by -0.37912407285401595
+R6 add to R4 multipled by 2.1734036086965762
+R7 add to R4 multipled by -0.5761907848596264
+R8 add to R4 multipled by 1.282916498416678
+R9 add to R4 multipled by 0.576790640341742
+R10 add to R4 multipled by -0.2621012475293822
+R11 add to R4 multipled by -0.13479289312052417
+R12 add to R4 multipled by -0.21905287654347222
+R13 add to R4 multipled by 0.3440011263893896
+R14 add to R4 multipled by 1.025380528340382
+R15 add to R4 multipled by 1.2093595519945588
+R16 add to R4 multipled by 0.6015108494676216
+R17 add to R4 multipled by 1.9384608845344613
+R18 add to R4 multipled by 1.255101481308311
+R19 add to R4 multipled by 2.1854815845960935
+R20 add to R4 multipled by -0.2460286272926273
+Reduce diagonal R4 to 1 by division by 0.5559930802298051
+R1 add to R5 multipled by 0.1177216006917347
+R2 add to R5 multipled by -0.5729235634387664
+R3 add to R5 multipled by -0.5642702074321952
+R4 add to R5 multipled by -0.031639477301107416
+R6 add to R5 multipled by 0.1912535606972109
+R7 add to R5 multipled by 0.0954871566187
+R8 add to R5 multipled by 0.028665279676574937
+R9 add to R5 multipled by 0.18287944364950467
+R10 add to R5 multipled by -0.35530036484239413
+R11 add to R5 multipled by -0.28457900940295755
+R12 add to R5 multipled by -0.2225808252050626
+R13 add to R5 multipled by -0.5236931884650661
+R14 add to R5 multipled by -0.20064821524152854
+R15 add to R5 multipled by 0.014398458657014036
+R16 add to R5 multipled by -0.4704292743440531
+R17 add to R5 multipled by 0.27175519703826956
+R18 add to R5 multipled by -0.21066294349512177
+R19 add to R5 multipled by 0.7042012110812262
+R20 add to R5 multipled by -0.24622920032510065
+Reduce diagonal R5 to 1 by division by 0.027434799732546554
+R1 add to R6 multipled by 0.15408898820402805
+R2 add to R6 multipled by -1.0304116146684292
+R3 add to R6 multipled by 0.012843557309238612
+R4 add to R6 multipled by -0.33699713020255156
+R5 add to R6 multipled by -0.0092707193664248
+R7 add to R6 multipled by 0.07945650935521631
+R8 add to R6 multipled by 0.5825764724286724
+R9 add to R6 multipled by 0.10632726453963835
+R10 add to R6 multipled by 0.7832719660330296
+R11 add to R6 multipled by 0.5338785059355702
+R12 add to R6 multipled by 0.30007940372441916
+R13 add to R6 multipled by -0.6120122300214019
+R14 add to R6 multipled by 0.22500866039210543
+R15 add to R6 multipled by 0.36268470394773017
+R16 add to R6 multipled by 0.32919843261919574
+R17 add to R6 multipled by 0.2162962188594158
+R18 add to R6 multipled by -0.30794001759066836
+R19 add to R6 multipled by -0.1320142680678015
+R20 add to R6 multipled by -0.01712293173822775
+Reduce diagonal R6 to 1 by division by -0.7061520753900704
+R1 add to R7 multipled by 1.1584235258960012
+R2 add to R7 multipled by -10.579577910686906
+R3 add to R7 multipled by -0.7039514234251747
+R4 add to R7 multipled by -3.2069569792442323
+R5 add to R7 multipled by -0.06248711365661455
+R6 add to R7 multipled by 10.230506219216975
+R8 add to R7 multipled by 6.755569643258819
+R9 add to R7 multipled by 1.3758169685434667
+R10 add to R7 multipled by 7.553587927460967
+R11 add to R7 multipled by 4.6564411646618495
+R12 add to R7 multipled by 2.226479151901536
+R13 add to R7 multipled by -6.347862596656603
+R14 add to R7 multipled by 1.5605135273033772
+R15 add to R7 multipled by 3.7912514493338803
+R16 add to R7 multipled by 2.6222472443667275
+R17 add to R7 multipled by 2.5029260004211737
+R18 add to R7 multipled by -2.780905521701733
+R19 add to R7 multipled by -0.8756148089454101
+R20 add to R7 multipled by -0.22360081064803522
+Reduce diagonal R7 to 1 by division by 6.586044611383656
+R1 add to R8 multipled by -0.3853858334417004
+R2 add to R8 multipled by 7.269740835148685
+R3 add to R8 multipled by 1.4301666944676794
+R4 add to R8 multipled by 2.1287378658160065
+R5 add to R8 multipled by 0.6951283878209913
+R6 add to R8 multipled by -8.614381972296627
+R7 add to R8 multipled by -2.286768933631557
+R9 add to R8 multipled by -1.3002192064881046
+R10 add to R8 multipled by -5.945755040446066
+R11 add to R8 multipled by -1.8110898950646543
+R12 add to R8 multipled by -0.6041280283644559
+R13 add to R8 multipled by 4.819840325369658
+R14 add to R8 multipled by -0.6987933110250477
+R15 add to R8 multipled by -2.9750576797358823
+R16 add to R8 multipled by -1.3386904385141305
+R17 add to R8 multipled by -1.3491261225826188
+R18 add to R8 multipled by 1.5101823737334117
+R19 add to R8 multipled by 1.0563202925768724
+R20 add to R8 multipled by 0.6706781677420905
+Reduce diagonal R8 to 1 by division by -0.8498964384616742
+R1 add to R9 multipled by -0.7192093539662101
+R2 add to R9 multipled by 0.5930615706243287
+R3 add to R9 multipled by -0.2972679370179063
+R4 add to R9 multipled by 0.06857949893774229
+R5 add to R9 multipled by 0.8117139338422821
+R6 add to R9 multipled by -1.1362712409931748
+R7 add to R9 multipled by -0.16322830766679108
+R8 add to R9 multipled by -0.2321345714300822
+R10 add to R9 multipled by -0.8295308055964559
+R11 add to R9 multipled by -1.0152223799595999
+R12 add to R9 multipled by -0.29861980130388227
+R13 add to R9 multipled by 1.0239510974959953
+R14 add to R9 multipled by -0.36749265228819084
+R15 add to R9 multipled by -0.2533210377571655
+R16 add to R9 multipled by -1.1886840389221476
+R17 add to R9 multipled by 0.203797355828435
+R18 add to R9 multipled by 0.13691788767815233
+R19 add to R9 multipled by 0.03141062768983385
+R20 add to R9 multipled by -0.32193903553443315
+Reduce diagonal R9 to 1 by division by -1.1380552189994568
+R1 add to R10 multipled by 0.18337410476610427
+R2 add to R10 multipled by -1.9533315202063952
+R3 add to R10 multipled by 0.3632741550428177
+R4 add to R10 multipled by -1.1036774147549495
+R5 add to R10 multipled by 0.3506107729611857
+R6 add to R10 multipled by 0.24198390526703129
+R7 add to R10 multipled by -1.5920324193892392
+R8 add to R10 multipled by 0.9326820819990828
+R9 add to R10 multipled by 0.6986650491888343
+R11 add to R10 multipled by 2.201844715955816
+R12 add to R10 multipled by 1.249349432067918
+R13 add to R10 multipled by 0.05549295100444107
+R14 add to R10 multipled by 0.5485849065111092
+R15 add to R10 multipled by 1.0021860843556263
+R16 add to R10 multipled by 1.031803287605563
+R17 add to R10 multipled by 1.3078549174536882
+R18 add to R10 multipled by -1.1841608195703561
+R19 add to R10 multipled by -0.7067822814826201
+R20 add to R10 multipled by -0.03684047024445525
+Reduce diagonal R10 to 1 by division by 1.2870370162134335
+R1 add to R11 multipled by -0.051104000906667446
+R2 add to R11 multipled by 1.8358647536109172
+R3 add to R11 multipled by 0.09274487827320421
+R4 add to R11 multipled by 0.6488206879945864
+R5 add to R11 multipled by -0.321601147102305
+R6 add to R11 multipled by 0.8264004136313596
+R7 add to R11 multipled by 0.581341004560056
+R8 add to R11 multipled by -1.3841593997723316
+R9 add to R11 multipled by -0.4143870351564821
+R10 add to R11 multipled by -1.7839721548344756
+R12 add to R11 multipled by -0.6000165467686669
+R13 add to R11 multipled by -0.46011737399069963
+R14 add to R11 multipled by 0.036643828832560565
+R15 add to R11 multipled by -1.592459063129976
+R16 add to R11 multipled by -0.7409122975803788
+R17 add to R11 multipled by -2.0834782677535677
+R18 add to R11 multipled by 0.6831266452335805
+R19 add to R11 multipled by 0.017023639161083404
+R20 add to R11 multipled by -0.880069101685246
+Reduce diagonal R11 to 1 by division by 0.25241229867624637
+R1 add to R12 multipled by -0.8692306638620615
+R2 add to R12 multipled by 1.5178991878122092
+R3 add to R12 multipled by 0.271207316465881
+R4 add to R12 multipled by -0.1798358738433471
+R5 add to R12 multipled by -0.4496039173126573
+R6 add to R12 multipled by -1.3411399077654615
+R7 add to R12 multipled by -0.36119592492556024
+R8 add to R12 multipled by -0.4924080063739318
+R9 add to R12 multipled by 0.4853829862799582
+R10 add to R12 multipled by 0.3950418337419226
+R11 add to R12 multipled by -0.10618486954586434
+R13 add to R12 multipled by 1.4274800777593075
+R14 add to R12 multipled by -0.03508214001517775
+R15 add to R12 multipled by 0.4627538729752988
+R16 add to R12 multipled by 0.40665764118665815
+R17 add to R12 multipled by 0.2595922675419089
+R18 add to R12 multipled by 0.17815241062201337
+R19 add to R12 multipled by -0.9574244784328125
+R20 add to R12 multipled by -0.46750919861827944
+Reduce diagonal R12 to 1 by division by 2.929481467826123
+R1 add to R13 multipled by 2.197808768286025
+R2 add to R13 multipled by -1.662213651007153
+R3 add to R13 multipled by -0.07295020943729447
+R4 add to R13 multipled by 1.0041799989149816
+R5 add to R13 multipled by 0.082015419557107
+R6 add to R13 multipled by 2.795523209906298
+R7 add to R13 multipled by 1.0539889128903197
+R8 add to R13 multipled by 0.014507345506672209
+R9 add to R13 multipled by -2.277208978184327
+R10 add to R13 multipled by -1.5754690499121433
+R11 add to R13 multipled by 0.21254004081319144
+R12 add to R13 multipled by -2.1038151433587813
+R14 add to R13 multipled by 0.30714337806614556
+R15 add to R13 multipled by -1.080023143960938
+R16 add to R13 multipled by -0.5627327523595473
+R17 add to R13 multipled by -1.4153684944997427
+R18 add to R13 multipled by 0.8253075609336098
+R19 add to R13 multipled by 1.7817226645061175
+R20 add to R13 multipled by 1.3557477246517873
+Reduce diagonal R13 to 1 by division by -1.1234107622455054
+R1 add to R14 multipled by 1.376754942950014
+R2 add to R14 multipled by -0.23590760803908672
+R3 add to R14 multipled by 0.47557473148995744
+R4 add to R14 multipled by 1.2397366779772274
+R5 add to R14 multipled by -1.3934585449160037
+R6 add to R14 multipled by 0.14556264136913288
+R7 add to R14 multipled by 1.3736886281679193
+R8 add to R14 multipled by -0.3155242199578935
+R9 add to R14 multipled by -3.0498030289179514
+R10 add to R14 multipled by 0.6158313197602068
+R11 add to R14 multipled by -2.6874963877384865
+R12 add to R14 multipled by -0.7673729918204226
+R13 add to R14 multipled by 1.702550147411958
+R15 add to R14 multipled by 1.799891121517817
+R16 add to R14 multipled by 1.4459589246187845
+R17 add to R14 multipled by 1.4237365471891086
+R18 add to R14 multipled by 2.1082104571180227
+R19 add to R14 multipled by 1.1230345237561912
+R20 add to R14 multipled by 3.61317294397935
+Reduce diagonal R14 to 1 by division by 1.8043946619046995
+R1 add to R15 multipled by -0.8990539808767442
+R2 add to R15 multipled by 1.0557995064823558
+R3 add to R15 multipled by 0.4242530287121889
+R4 add to R15 multipled by -0.1613065015616376
+R5 add to R15 multipled by 0.24960837593688254
+R6 add to R15 multipled by -0.13810921433379075
+R7 add to R15 multipled by -0.43721727357886886
+R8 add to R15 multipled by -0.9739398638570302
+R9 add to R15 multipled by 0.45360095666653555
+R10 add to R15 multipled by -1.5877717171001893
+R11 add to R15 multipled by 1.3662970648098103
+R12 add to R15 multipled by 0.9606776640595265
+R13 add to R15 multipled by -0.6711961289562173
+R14 add to R15 multipled by 0.11455526429368362
+R16 add to R15 multipled by -0.6506061688074076
+R17 add to R15 multipled by -1.3068222048875326
+R18 add to R15 multipled by -0.05289440821660851
+R19 add to R15 multipled by -0.10481018296616296
+R20 add to R15 multipled by -1.2999576370046964
+Reduce diagonal R15 to 1 by division by -0.0815760900494439
+R1 add to R16 multipled by -0.5187781270073544
+R2 add to R16 multipled by 0.0056608134461544335
+R3 add to R16 multipled by -0.06173168391238709
+R4 add to R16 multipled by -0.1828737853760346
+R5 add to R16 multipled by -0.09956818898791359
+R6 add to R16 multipled by 0.25328484024137027
+R7 add to R16 multipled by -0.014560733530758013
+R8 add to R16 multipled by 0.11843572891711082
+R9 add to R16 multipled by 0.08230303304066196
+R10 add to R16 multipled by -0.9030718486316803
+R11 add to R16 multipled by 0.07386761695520563
+R12 add to R16 multipled by 0.3886398822412618
+R13 add to R16 multipled by -0.819616015957116
+R14 add to R16 multipled by 0.32578140129784555
+R15 add to R16 multipled by 0.14487160080629713
+R17 add to R16 multipled by 0.39678090974030933
+R18 add to R16 multipled by 0.13527154615517337
+R19 add to R16 multipled by 0.9433126617370229
+R20 add to R16 multipled by -0.49637841258307114
+Reduce diagonal R16 to 1 by division by -1.5061071116628861
+R1 add to R17 multipled by -0.43234971255436616
+R2 add to R17 multipled by -1.710755461439489
+R3 add to R17 multipled by 0.22873730042393883
+R4 add to R17 multipled by 0.27074877911564854
+R5 add to R17 multipled by -0.41548194473530287
+R6 add to R17 multipled by 0.7780988020022961
+R7 add to R17 multipled by 0.3731448051981961
+R8 add to R17 multipled by 0.8304329456891854
+R9 add to R17 multipled by -0.9052764045840368
+R10 add to R17 multipled by -0.8305876294769355
+R11 add to R17 multipled by -0.7492093875732465
+R12 add to R17 multipled by -0.3827493326741718
+R13 add to R17 multipled by -0.6271882961839051
+R14 add to R17 multipled by 0.7911591651668117
+R15 add to R17 multipled by 0.3689854663364817
+R16 add to R17 multipled by 1.1708625047154837
+R18 add to R17 multipled by 0.45323909430672
+R19 add to R17 multipled by 2.3022732791262364
+R20 add to R17 multipled by 1.3162247048105415
+Reduce diagonal R17 to 1 by division by 0.3226995648990532
+R1 add to R18 multipled by -1.788069220807196
+R2 add to R18 multipled by 1.6087053890899776
+R3 add to R18 multipled by -0.019080054943591974
+R4 add to R18 multipled by -1.6832089737932265
+R5 add to R18 multipled by -0.1157952000091837
+R6 add to R18 multipled by -0.4356735514465208
+R7 add to R18 multipled by -0.7965275892728951
+R8 add to R18 multipled by -0.7463527602652962
+R9 add to R18 multipled by 1.308981223595281
+R10 add to R18 multipled by -2.3536702146718538
+R11 add to R18 multipled by 1.0748336333249275
+R12 add to R18 multipled by 1.8103253447133605
+R13 add to R18 multipled by -1.9964777681804138
+R14 add to R18 multipled by 0.07038098813971375
+R15 add to R18 multipled by 1.0507912951135823
+R16 add to R18 multipled by 2.1601727512284254
+R17 add to R18 multipled by -0.20732668287069403
+R19 add to R18 multipled by 0.11334243787578835
+R20 add to R18 multipled by -3.1886588599021084
+Reduce diagonal R18 to 1 by division by 1.2280858161135297
+R1 add to R19 multipled by -1.5668363273629158
+R2 add to R19 multipled by 1.6652184848259024
+R3 add to R19 multipled by 1.5607002253208073
+R4 add to R19 multipled by -1.6770562938362161
+R5 add to R19 multipled by -1.7396452176459536
+R6 add to R19 multipled by -0.6092417323911299
+R7 add to R19 multipled by -1.1672098155589987
+R8 add to R19 multipled by -1.5472658942700053
+R9 add to R19 multipled by -0.23011325862381504
+R10 add to R19 multipled by -2.9448443995965876
+R11 add to R19 multipled by 0.8578441650811417
+R12 add to R19 multipled by 0.6906918252311023
+R13 add to R19 multipled by 0.09785109674636683
+R14 add to R19 multipled by -0.7444338807780525
+R15 add to R19 multipled by 1.4710399729400643
+R16 add to R19 multipled by 1.458949165587462
+R17 add to R19 multipled by 1.7167060665976552
+R18 add to R19 multipled by 2.5096424873822234
+R20 add to R19 multipled by -1.5233310687463426
+Reduce diagonal R19 to 1 by division by 2.6775737175839036
+R1 add to R20 multipled by -1.3631793248628483
+R2 add to R20 multipled by 0.4096505705699647
+R3 add to R20 multipled by -0.0636484326640887
+R4 add to R20 multipled by -1.649380026846628
+R5 add to R20 multipled by -0.5732443489213128
+R6 add to R20 multipled by 0.34234541954172837
+R7 add to R20 multipled by -0.8713391502540462
+R8 add to R20 multipled by -0.18265954231761938
+R9 add to R20 multipled by 0.26953502484107544
+R10 add to R20 multipled by -2.33468128770507
+R11 add to R20 multipled by 0.6216820471024045
+R12 add to R20 multipled by 0.3805332775592841
+R13 add to R20 multipled by -1.1472956168087707
+R14 add to R20 multipled by 0.13719122534725392
+R15 add to R20 multipled by 1.1531045118203802
+R16 add to R20 multipled by 2.305059701321394
+R17 add to R20 multipled by 0.970005862557787
+R18 add to R20 multipled by 1.7545325463632762
+R19 add to R20 multipled by -0.9449364064569267
+The solution is: [0.2182005823423545, 0.3886357097625226, 0.23368846425840123, 0.5804130341264079, -0.18672509518968228, 0.35355997757591195, -0.5596661622083972, -0.47057133049683225, -0.3945589792856229, -0.45774088545395153, 0.37104469570724413, -0.19593567201465442, 1.1402904217137635, 0.280816103035032, -0.8712103045039044, -0.3354869537601255, -0.1308920887110877, -0.3007993374368588, 0.6354996520638136, 0.47156285858406827]
+Saved to file out.txt
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2182005823423545]
+[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3886357097625226]
+[0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.23368846425840123]
+[0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5804130341264079]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.18672509518968228]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.35355997757591195]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.5596661622083972]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.47057133049683225]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.3945589792856229]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.45774088545395153]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.37104469570724413]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.19593567201465442]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1402904217137635]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.280816103035032]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.8712103045039044]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, -0.3354869537601255]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, -0.1308920887110877]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.3007993374368588]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.6354996520638136]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.47156285858406827]
 </pre>
 </span>
 </div>
@@ -197,7 +1012,7 @@ Start test 3?[0m
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1.1</a> at Sep 6, 2021, 6:46:13 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at Sep 8, 2021, 1:10:06 PM</p>
 </div>
 </div>
 </body>
