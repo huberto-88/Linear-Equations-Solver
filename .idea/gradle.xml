@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_INTERNAL" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Linear Equations Solver/task" />
+            <option value="$PROJECT_DIR$/Topics/Branching statements/Even or odd" />
+            <option value="$PROJECT_DIR$/Topics/Branching statements/The integer barrier" />
+            <option value="$PROJECT_DIR$/Topics/Branching statements/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Integer types and operations/Next even number" />
+            <option value="$PROJECT_DIR$/Topics/Integer types and operations/Reading integer numbers" />
+            <option value="$PROJECT_DIR$/Topics/Integer types and operations/Squirrels and nuts" />
+            <option value="$PROJECT_DIR$/Topics/Integer types and operations/The sum of digits" />
+            <option value="$PROJECT_DIR$/Topics/Integer types and operations/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Alphabetical order" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Boxes" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Check if an array contains two numbers" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Check if an array is sorted ascending" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Count how many times a number occurs" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Cyclically shifting elements" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Does an array contain N" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Individual taxes" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Right Rotation" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Sum array elements greater than a value" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/The index of the first max in an array" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/The longest ascending sequence" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/The maximum product of adjacent elements" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/The minimum value of an array" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Triples" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Two numbers never occur next to each other" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Heron's formula" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Pow" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Quadratic equation" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Rabin-Karp algorithm in Java/Calculating a substring hash" />
+            <option value="$PROJECT_DIR$/Topics/Rabin-Karp algorithm in Java/Repetitive Substring" />
+            <option value="$PROJECT_DIR$/Topics/Rabin-Karp algorithm in Java/The longest repetitive substring" />
+            <option value="$PROJECT_DIR$/Topics/Rabin-Karp algorithm in Java/The number of distinct substrings" />
+            <option value="$PROJECT_DIR$/Topics/Rabin-Karp algorithm in Java/The number of equal substring pairs" />
+            <option value="$PROJECT_DIR$/Topics/Rabin-Karp algorithm in Java/Theory" />
+            <option value="$PROJECT_DIR$/Topics/The Set interface/Creating a set" />
+            <option value="$PROJECT_DIR$/Topics/The Set interface/Removing elements" />
+            <option value="$PROJECT_DIR$/Topics/The Set interface/Strict superset" />
+            <option value="$PROJECT_DIR$/Topics/The Set interface/Symmetric difference" />
+            <option value="$PROJECT_DIR$/Topics/The Set interface/Theory" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

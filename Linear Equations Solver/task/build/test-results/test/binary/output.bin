@@ -1,0 +1,26 @@
+[1;31m
+Start test 1[0m
+,Reduce diagonal R0 to 1 by division by 1.0
+ R2 add to R1 multipled by -2.0
+ R3 add to R1 multipled by -3.0
+,Reduce diagonal R1 to 1 by division by 2.0
+ R1 add to R2 multipled by -1.0
+ R3 add to R2 multipled by -3.0
+-Reduce diagonal R2 to 1 by division by -0.5
+ R1 add to R3 multipled by -5.5
+R2 add to R3 multipled by 3.5
+"The solution is: [1.0, 2.0, 3.0]
+Saved to file out.txt
+[1.0, 0.0, 0.0, 1.0]
+[0.0, 1.0, 0.0, 2.0]
+[-0.0, -0.0, 1.0, 3.0]
+[1;31m
+Start test 2[0m
+,Reduce diagonal R0 to 1 by division by 1.0
+,Reduce diagonal R1 to 1 by division by 1.0
+The solution is: [1.0, 1.0]
+Saved to file out.txt
+[1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0]
+[1;31m
+Start test 3[0m
